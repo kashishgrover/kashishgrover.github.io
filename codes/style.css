@@ -1,7 +1,7 @@
 body {
   font-family: 'Work Sans', sans-serif;
-  background-color: #252934;
-  color: white;
+  background-color: #2A2C2B;
+  color: #FFF;
   margin: 0;
   line-height: 1.5;
 }
@@ -15,7 +15,7 @@ body {
 
 h1 {
   font-size: 45px;
-  color: #df5d4b;
+  color: #DC3522;
   font-weight: 500;
 }
 
@@ -29,13 +29,13 @@ section h2 {
 }
 
 h2 a {
-  color: white;
+  color: #FFF;
   text-decoration: none;
-  border-bottom: 2px solid #df5d4b;
+  border-bottom: 2px solid #DC3522;
 }
 
 h2 a:hover {
-  color: #df5d4b;
+  color: #DC3522;
 }
 
 p {
@@ -44,7 +44,7 @@ p {
 }
 
 p a {
-  color: white;
+  color: #FFF;
 }
 
 a {
@@ -67,7 +67,7 @@ header {
   width: 100%;
   padding: 0;
   z-index: -1;
-  background-color: #252934;
+  background-color: #2A2C2B;
 }
 
 header nav {
@@ -78,14 +78,14 @@ header nav {
 }
 
 header nav a {
-  color: white;
+  color: #FFF;
   text-decoration: none;
   margin-left: 50px;
   border-bottom: 2px solid rgba(223, 93, 75, 0);
 }
 
 header nav a:hover {
-  border-bottom: 2px solid #df5d4b;
+  border-bottom: 2px solid #DC3522;
 }
 
 .centerer {
@@ -106,7 +106,7 @@ section {
   padding: 50px;
   padding-left: 100px;
   padding-right: 100px;
-  background-color: #252934;
+  background-color: #2A2C2B;
 }
 
 .ta-c {
@@ -133,12 +133,12 @@ section {
 .link {
   font-size: 19px;
   text-decoration: none;
-  border: 1px solid white;
+  border: 1px solid #FFF;
   padding: 10px;
   border-radius: 3px;
   margin-top: 20px;
   display: inline-block;
-  color: white;
+  color: #FFF;
 }
 
 .link:hover {
@@ -158,7 +158,7 @@ section {
 }
 
 .tnm .link {
-  color: white;
+  color: #FFF;
   background-color: rgba(0, 0, 0, 0.1);
 }
 
@@ -185,7 +185,7 @@ section {
 }
 
 .scorehorse .link:hover {
-  background-color: white;
+  background-color: #FFF;
 }
 
 .momentum {
@@ -195,7 +195,7 @@ section {
 }
 
 .momentum .link {
-  color: white;
+  color: #FFF;
   background-color: rgba(0, 0, 0, 0.5);
 }
 
@@ -243,7 +243,7 @@ footer div {
 }
 
 footer div a {
-  color: white;
+  color: #FFF;
   text-decoration: none;
 }
 
@@ -252,7 +252,7 @@ footer div a {
   max-width: 1000px;
   margin-right: auto;
   margin-left: auto;
-  color: #252934;
+  color: #2A2C2B;
   overflow: hidden;
   border-radius: 3px;
 }
@@ -295,7 +295,7 @@ footer div a {
   padding-right: 20px;
   border-radius: 26px;
   background-color: #3185F5;
-  color: white;
+  color: #FFF;
   position: relative;
 }
 
