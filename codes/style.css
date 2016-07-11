@@ -1,7 +1,7 @@
 body {
   font-family: 'Work Sans', sans-serif;
-  background-color: #2A2C2B;
-  color: #FFF;
+  background-color: #2C3E50;
+  color: #ECF0F1;
   margin: 0;
   line-height: 1.5;
 }
@@ -15,7 +15,7 @@ body {
 
 h1 {
   font-size: 45px;
-  color: #DC3522;
+  color: #E74C3C;
   font-weight: 500;
 }
 
@@ -29,13 +29,13 @@ section h2 {
 }
 
 h2 a {
-  color: #FFF;
+  color: #ECF0F1;
   text-decoration: none;
-  border-bottom: 2px solid #DC3522;
+  border-bottom: 2px solid #E74C3C;
 }
 
 h2 a:hover {
-  color: #DC3522;
+  color: #E74C3C;
 }
 
 p {
@@ -44,7 +44,7 @@ p {
 }
 
 p a {
-  color: #FFF;
+  color: #ECF0F1;
 }
 
 a {
@@ -67,7 +67,7 @@ header {
   width: 100%;
   padding: 0;
   z-index: -1;
-  background-color: #2A2C2B;
+  background-color: #2C3E50;
 }
 
 header nav {
@@ -78,14 +78,14 @@ header nav {
 }
 
 header nav a {
-  color: #FFF;
+  color: #ECF0F1;
   text-decoration: none;
   margin-left: 50px;
   border-bottom: 2px solid rgba(223, 93, 75, 0);
 }
 
 header nav a:hover {
-  border-bottom: 2px solid #DC3522;
+  border-bottom: 2px solid #E74C3C;
 }
 
 .centerer {
@@ -106,7 +106,7 @@ section {
   padding: 50px;
   padding-left: 100px;
   padding-right: 100px;
-  background-color: #2A2C2B;
+  background-color: #2C3E50;
 }
 
 .ta-c {
@@ -133,12 +133,12 @@ section {
 .link {
   font-size: 19px;
   text-decoration: none;
-  border: 1px solid #FFF;
+  border: 1px solid #ECF0F1;
   padding: 10px;
   border-radius: 3px;
   margin-top: 20px;
   display: inline-block;
-  color: #FFF;
+  color: #ECF0F1;
 }
 
 .link:hover {
@@ -154,11 +154,11 @@ section {
 /* custom sections */
 
 .tnm {
-  background-color: #f9886b;
+  background-color: #E74C3C;
 }
 
 .tnm .link {
-  color: #FFF;
+  color: #ECF0F1;
   background-color: rgba(0, 0, 0, 0.1);
 }
 
@@ -175,7 +175,6 @@ section {
   color: #333;
 }
 
-.scorehorse .title,
 .scorehorse .link {
   color: #ff3a3a;
 }
@@ -185,28 +184,59 @@ section {
 }
 
 .scorehorse .link:hover {
-  background-color: #FFF;
+  background-color: #ECF0F1;
 }
 
-.momentum {
-  background-image: url(../img/momentum.jpg);
-  background-size: cover;
-  background-position: center;
+.embedded {
+  background-color: #155020;
 }
 
-.momentum .link {
-  color: #FFF;
+.embedded .link {
+  color: #ECF0F1;
   background-color: rgba(0, 0, 0, 0.5);
 }
 
-.momentum .link:hover {
+.embedded .link:hover {
   background-color: rgba(255, 255, 255, 0.2);
 }
 
-.sleep {
-  background-image: url(../img/sleep.jpg);
-  background-size: cover;
-  background-position: center;
+.ccompiler {
+  background-color: #1E1E1F;
+}
+
+.ccompiler .link {
+  color: #ECF0F1;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.ccompiler .link:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.cafe {
+  background-color: #3B130F;
+}
+
+.cafe .link {
+  color: #ECF0F1;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.cafe .link:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.uvds {
+  background-color: #2980B9;
+}
+
+.uvds .link {
+  color: #ECF0F1;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.uvds .link:hover {
+  background-color: rgba(255, 255, 255, 0.2);
 }
 
 .tetragon {
@@ -243,7 +273,7 @@ footer div {
 }
 
 footer div a {
-  color: #FFF;
+  color: #ECF0F1;
   text-decoration: none;
 }
 
@@ -252,13 +282,13 @@ footer div a {
   max-width: 1000px;
   margin-right: auto;
   margin-left: auto;
-  color: #2A2C2B;
+  color: #2C3E50;
   overflow: hidden;
   border-radius: 3px;
 }
 
 #messenger h2 {
-  font-weight: 500;
+  font-weight: bold;
 }
 
 #messenger h3 {
@@ -295,7 +325,7 @@ footer div a {
   padding-right: 20px;
   border-radius: 26px;
   background-color: #3185F5;
-  color: #FFF;
+  color: #ECF0F1;
   position: relative;
 }
 
