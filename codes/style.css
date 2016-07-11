@@ -1,6 +1,6 @@
 body {
   font-family: 'Work Sans', sans-serif;
-  background-color: #2C3E50;
+    background-image: url('../img/KGP_5267.jpg');
   color: #ECF0F1;
   margin: 0;
   line-height: 1.5;
@@ -67,7 +67,7 @@ header {
   width: 100%;
   padding: 0;
   z-index: -1;
-  background-color: #2C3E50;
+    background-image: url('../img/KGP_5267.jpg');
 }
 
 header nav {
