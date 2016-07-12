@@ -1,6 +1,6 @@
 body {
   font-family: 'Work Sans', sans-serif;
-    background-image: url('../img/KGP_5267.jpg');
+    background-image: url('../img/footer_lodyas.png');
   color: #ECF0F1;
   margin: 0;
   line-height: 1.5;
@@ -67,7 +67,7 @@ header {
   width: 100%;
   padding: 0;
   z-index: -1;
-    background-image: url('../img/KGP_5267.jpg');
+    background-image: url('../img/footer_lodyas.png');
 }
 
 header nav {
@@ -409,7 +409,7 @@ hr {
 
 /* Responsive bbyyyyyyy */
 
-@media all and (max-width: 1100px) {
+@media all and (max-width: 800px) {
   .folio {
     width: 100%;
   }
@@ -435,13 +435,13 @@ hr {
   }
 }
 
-@media all and (max-width: 600px) {
+@media all and (max-width: 100%) {
   header {
     height: auto;
   }
   .centerer {
-    margin-top: 40px;
-    margin-bottom: 40px;
+    margin-top: 0%;
+    margin-bottom: 50%;
   }
   .hero {
     text-align: center;
