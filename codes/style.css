@@ -1,5 +1,11 @@
+@font-face {
+    font-family: 'nevis'; /*a name to be used later*/
+    src: url('../src/nevis.ttf'); /*URL to font*/
+}
+
 body {
   font-family: 'Work Sans', sans-serif;
+  font-style: normal; 
   background-image: url('../img/KGP_5267.jpg');
   background-repeat: no-repeat;
   color: #ECF0F1;
@@ -15,22 +21,22 @@ body {
 /* Basic Typography */
 
 h1 {
-  font-family: 'Courgette', cursive;
+  font-family: 'nevis', sans-serif;
   font-size: 55px;
   color: #E74C3C;
   font-weight: 500;
 }
 
-h2-typed {
-  font-family: 'Courgette', cursive;
+.typed {
+  font-family: 'Space Mono', sans-serif;
   font-size: 25px;
-  font-weight: 300;
+  font-weight: 400;
 }
 
 h2 {
-  font-family: 'Courgette', cursive;
+  font-family: 'nevis', sans-serif;
   font-size: 25px;
-  font-weight: 300;
+  font-weight: 400;
 }
 
 section h2 {
@@ -530,6 +536,7 @@ nav:not(.mm-menu) {
     -webkit-animation: blink 0.7s infinite;
     -moz-animation: blink 0.7s infinite;
     animation: blink 0.7s infinite;
+    font-size: 25px;
 }
 @keyframes blink{
     0% { opacity:1; }
