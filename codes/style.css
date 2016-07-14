@@ -1,6 +1,7 @@
 body {
   font-family: 'Work Sans', sans-serif;
   background-image: url('../img/KGP_5267.jpg');
+  background-repeat: no-repeat;
   color: #ECF0F1;
   margin: 0;
   line-height: 1.5;
@@ -75,6 +76,7 @@ header {
   padding: 0;
   z-index: -1;
   background-image: url('../img/KGP_5267.jpg');
+  background-repeat: no-repeat;
 } 
 
 header nav {
@@ -272,7 +274,8 @@ footer {
   z-index: -2;
   text-align: center;
   display: flex;
-  /*background-image: url(../img/cartographer-blue.jpg);*/
+  background-image: url('../img/KGP_5267.jpg');
+  background-repeat: no-repeat;
 }
 
 footer div {
