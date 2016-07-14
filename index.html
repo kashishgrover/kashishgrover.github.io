@@ -29,7 +29,14 @@
       $html = $('html, body');
 
     $menu.mmenu({
-      dragOpen: true
+      dragOpen: true,
+      "extensions": [
+        "theme-dark",
+        "effect-listitems-fade"
+      ],
+      "offCanvas": {
+        "zposition": "front"
+      }
     });
 
     var $anchor = false;
