@@ -1,6 +1,6 @@
 body {
   font-family: 'Work Sans', sans-serif;
-  background-image: url('../img/footer_lodyas.png');
+  background-image: url('../img/KGP_5267.jpg');
   color: #ECF0F1;
   margin: 0;
   line-height: 1.5;
@@ -74,8 +74,8 @@ header {
   width: 100%;
   padding: 0;
   z-index: -1;
-  background-image: url('../img/footer_lodyas.png');
-}
+  background-image: url('../img/KGP_5267.jpg');
+} 
 
 header nav {
   text-align: center;
@@ -265,7 +265,7 @@ section {
 /*Contact*/
 
 footer {
-  height: 400px;
+  height: 50%;
   width: 100%;
   position: fixed;
   bottom: 0;
