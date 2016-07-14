@@ -15,12 +15,14 @@ body {
 /* Basic Typography */
 
 h1 {
-  font-size: 45px;
+  font-family: 'Courgette', cursive;
+  font-size: 55px;
   color: #E74C3C;
   font-weight: 500;
 }
 
 h2 {
+  font-family: 'Courgette', cursive;
   font-size: 25px;
   font-weight: 300;
 }
