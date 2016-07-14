@@ -278,7 +278,7 @@ footer {
   height: 400px;
   width: 100%;
   position: absolute;
-  z-index: 20;
+  z-index: -2;
   text-align: center;
   display: flex;
   background-image: url('../img/KGP_5267.jpg');
