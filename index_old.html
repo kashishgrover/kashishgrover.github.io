@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+<!-- ####HEAD##############################################HEAD#### -->
 
 <head>
   <meta http-equiv="Content-type" content="text/html; charset=utf-8">
@@ -17,56 +18,19 @@
   <!-- FAVICON -->
   <link rel="shortcut icon" href="./img/favicon.png" type="image/x-icon">
   <link rel="icon" href="./img/favicon.png" type="image/x-icon">
-  <!-- SLIDER MENU -->
-  <link type="text/css" rel="stylesheet" href="codes/demo.css" />
-  <link type="text/css" rel="stylesheet" href="dist/css/jquery.mmenu.all.css" />
-  <script type="text/javascript" src="http://code.jquery.com/jquery-2.2.0.js"></script>
-  <script type="text/javascript" src="dist/js/jquery.mmenu.all.min.js"></script>
-  <script type="text/javascript">
-  $(function() {
-    var $menu = $('nav#menu'),
-      $html = $('html, body');
-
-    $menu.mmenu({
-      dragOpen: true
-    });
-
-    var $anchor = false;
-    $menu.find('li > a').on(
-      'click',
-      function(e) {
-        $anchor = $(this);
-      }
-    );
-
-    var api = $menu.data('mmenu');
-    api.bind('closed',
-      function() {
-        if ($anchor) {
-          var href = $anchor.attr('href');
-          $anchor = false;
-
-          //  if the clicked link is linked to an anchor, scroll the page to that anchor 
-          if (href.slice(0, 1) == '#') {
-            $html.animate({
-              scrollTop: $(href).offset().top
-            });
-          }
-        }
-      }
-    );
-  });
-
-  </script>
 </head>
+<!-- ####HEAD ENDS####################################HEAD ENDS#### -->
+<!-- ####BODY##############################################BODY#### -->
 
 <body>
   <div class="wrapper">
     <header>
-      <div class="header fixed">
-        <br>
-        <a href="#menu"></a>
-      </div>
+      <nav>
+        <a href="#projects">Projects</a>
+        <a target="_blank" href="https://500px.com/kashishgrover95">Photography</a>
+        <a href="#contact">Contact</a>
+        <a href="">Résumé</a>
+      </nav>
       <div class="centerer">
         <div class="hero">
           <h1>Kashish Grover</h1>
@@ -157,20 +121,95 @@
       </section>
     </div>
     <!-- end flexin -->
-    <div class="footer" id="contact">
+    <div id="contact"></div>
+  </div>
+  <footer>
+    <div>
       <h2><a href="mailto:kashishgrover95@gmail.com">kashishgrover95@gmail.com</a></h2>
       <h2><a target="_blank" href="https://www.facebook.com/kashishgrover">facebook</a> - <a target="_blank" href="https://in.linkedin.com/in/kashishgrover">linkedin</a> - <a target="_blank" href="https://angel.co/kashishgrover">angel.co</a></h2>
     </div>
-  </div>
-  <nav id="menu">
-    <ul>
-      <li><a href="#projects">Projects</a></li>
-      <li><a target="_blank" href="https://500px.com/kashishgrover95">Photography</a></li>
-      <li><a href="#contact">Contact</a></li>
-      <li><a href="">Résumé</a></li>
-    </ul>
-  </nav>
+  </footer>
+  <!--   <script type="text/javascript" src="codes/script.js"></script> -->
+  <!--   <script type="text/javascript">
+    (function() {
+
+
+      //// 1. Define Space and Form
+      var colors = {
+        a0: "#ff2d5d",
+        a1: "#42dc8e",
+        a2: "#2e43eb",
+        a3: "#ffe359",
+        b1: "#96bfed",
+        b2: "#f5ead6",
+        b3: "#f1f3f7",
+        b4: "#e2e6ef"
+      };
+      var space = new CanvasSpace("demo", "#252934").display();
+      var form = new Form(space);
+
+      //// 2. Create Elements
+      var pts = [];
+      var center = space.size.$divide(2);
+      var line = new Line(0, -500).to(space.size.x, 0);
+
+      var count = 150;
+      var r = Math.min(space.size.x, space.size.y) * 1;
+      for (var i = 0; i < count; i++) {
+        var p = new Vector(Math.random() * r - Math.random() * r, Math.random() * r - Math.random() * r);
+        //p.y -= space.size.x / 2;
+        p.moveBy(center).rotate2D(i * Math.PI / count, center);
+        pts.push(p);
+      }
+
+
+      //// 3. Visualize, Animate, Interact
+      space.add({
+        animate: function(time, fps, context) {
+
+          for (var i = 0; i < pts.length; i++) {
+
+            // rotate the points slowly
+            var pt = pts[i];
+            pt.rotate2D(Const.one_degree / 20, center);
+            form.stroke(false).fill(colors["a" + (i % 3)]).point(pt, 1);
+
+            // get line from pt to the mouse line
+            var ln = new Line(pt).to(line.getPerpendicularFromPoint(pt));
+
+            // opacity of line derived from distance to the line
+            var opacity = Math.min(0.8, 1 - Math.abs(line.getDistanceFromPoint(pt)) / r);
+            form.stroke("rgba(255,255,255, 0.1)").fill(true).line(ln);
+          }
+        }
+      });
+
+
+      // 4. Start playing
+      space.play();
+    })();
+    </script> -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+  <script>
+  $(function() {
+    $('a[href*=#]:not([href=#])').click(function() {
+      if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this
+        .hostname) {
+        var target = $(this.hash);
+        target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+        if (target.length) {
+          $('html,body').animate({
+            scrollTop: target.offset().top
+          }, 1000);
+          return false;
+        }
+      }
+    });
+  });
+
+  </script>
 </body>
+<!-- ####BODY ENDS####################################BODY ENDS#### -->
 
 </html>
 

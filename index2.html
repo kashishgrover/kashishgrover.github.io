@@ -46,7 +46,7 @@
           var href = $anchor.attr('href');
           $anchor = false;
 
-          //  if the clicked link is linked to an anchor, scroll the page to that anchor 
+          //	if the clicked link is linked to an anchor, scroll the page to that anchor 
           if (href.slice(0, 1) == '#') {
             $html.animate({
               scrollTop: $(href).offset().top
@@ -77,6 +77,14 @@
     <header id="pt">
       <canvas id="demo" width="100%" height="266"></canvas>
     </header>
+    <nav id="menu">
+      <ul>
+        <li><a href="#projects">Projects</a></li>
+        <li><a target="_blank" href="https://500px.com/kashishgrover95">Photography</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="">Résumé</a></li>
+      </ul>
+    </nav>
     <!-- dupe header for fancy shit -->
     <section id="projects">
       <h2 class="ta-c">Projects</h2>
@@ -157,19 +165,14 @@
       </section>
     </div>
     <!-- end flexin -->
-    <div class="footer" id="contact">
+    <div id="contact"></div>
+  </div>
+  <footer>
+    <div>
       <h2><a href="mailto:kashishgrover95@gmail.com">kashishgrover95@gmail.com</a></h2>
       <h2><a target="_blank" href="https://www.facebook.com/kashishgrover">facebook</a> - <a target="_blank" href="https://in.linkedin.com/in/kashishgrover">linkedin</a> - <a target="_blank" href="https://angel.co/kashishgrover">angel.co</a></h2>
     </div>
-  </div>
-  <nav id="menu">
-    <ul>
-      <li><a href="#projects">Projects</a></li>
-      <li><a target="_blank" href="https://500px.com/kashishgrover95">Photography</a></li>
-      <li><a href="#contact">Contact</a></li>
-      <li><a href="">Résumé</a></li>
-    </ul>
-  </nav>
+  </footer>
 </body>
 
 </html>
