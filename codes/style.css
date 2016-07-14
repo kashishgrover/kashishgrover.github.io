@@ -21,6 +21,12 @@ h1 {
   font-weight: 500;
 }
 
+h2-typed {
+  font-family: 'Courgette', cursive;
+  font-size: 25px;
+  font-weight: 300;
+}
+
 h2 {
   font-family: 'Courgette', cursive;
   font-size: 25px;
@@ -517,4 +523,26 @@ nav:not(.mm-menu) {
 
 .hamburger-inner {
   background-color: #FFF;
+}
+
+.typed-cursor{
+    opacity: 1;
+    -webkit-animation: blink 0.7s infinite;
+    -moz-animation: blink 0.7s infinite;
+    animation: blink 0.7s infinite;
+}
+@keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-webkit-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-moz-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
 }

@@ -25,8 +25,18 @@
   <!-- SCRIPTS -->
   <script type="text/javascript" src="http://code.jquery.com/jquery-2.2.0.js"></script>
   <script type="text/javascript" src="dist/js/jquery.mmenu.all.min.js"></script>
-  <script src="src/hammer.min.js" type="text/javascript"></script> 
+  <script src="src/hammer.min.js" type="text/javascript"></script>
   <script src="dist/addons/dragopen/jquery.mmenu.dragopen.min.js" type="text/javascript"></script>
+  <script src="src/typed.js" type="text/javascript"></script>
+  <script>
+  $(function() {
+    $(".h2-typed").typed({
+      strings: ["Software Developer", "Photographer", "Percussionist", "Software Developer"],
+      typeSpeed: 50
+    });
+  });
+
+  </script>
   <script type="text/javascript">
   $(function() {
     var $menu = $('nav#menu'),
@@ -78,7 +88,8 @@
       <div class="centerer">
         <div class="hero">
           <h1>Kashish Grover</h1>
-          <h2>Software Developer, Photographer, and Percussionist from Delhi, India. Intern at <a target="_blank" href="http://www.shippable.com/">Shippable.</a></h2>
+          <!-- <h2>Software Developer, Photographer, and Percussionist from Delhi, India. Intern at <a target="_blank" href="http://www.shippable.com/">Shippable.</a></h2> -->
+          <h2><span class="h2-typed"></span></h2>
         </div>
       </div>
     </header>
