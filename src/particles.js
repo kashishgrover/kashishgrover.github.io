@@ -1,10 +1,10 @@
 particlesJS("pt", {
   "particles": {
     "number": {
-      "value": 80,
+      "value": 60,
       "density": {
         "enable": true,
-        "value_area": 800
+        "value_area": 1000
       }
     },
     "color": {
@@ -17,7 +17,7 @@ particlesJS("pt", {
         "color": "#000000"
       },
       "polygon": {
-        "nb_sides": 5
+        "nb_sides": 3
       },
       "image": {
         "src": "img/github.svg",
@@ -54,8 +54,8 @@ particlesJS("pt", {
     },
     "move": {
       "enable": true,
-      "speed": 3,
-      "direction": "none",
+      "speed": 2,
+      "direction": "bottom",
       "random": false,
       "straight": false,
       "out_mode": "out",
@@ -68,7 +68,7 @@ particlesJS("pt", {
     }
   },
   "interactivity": {
-    "detect_on": "canvas",
+    "detect_on": "window",
     "events": {
       "onhover": {
         "enable": false,
