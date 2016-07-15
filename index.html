@@ -21,60 +21,6 @@
   <!-- FAVICON -->
   <link rel="shortcut icon" href="./img/favicon.png" type="image/x-icon">
   <link rel="icon" href="./img/favicon.png" type="image/x-icon">
-  <!-- SCRIPTS -->
-  <script type="text/javascript" src="http://code.jquery.com/jquery-2.2.0.js"></script>
-  <script type="text/javascript" src="dist/js/jquery.mmenu.all.min.js"></script>
-  <script src="src/hammer.min.js" type="text/javascript"></script>
-  <script src="dist/addons/dragopen/jquery.mmenu.dragopen.min.js" type="text/javascript"></script>
-  <script src="src/typed.js" type="text/javascript"></script>
-  <script>
-  $(function() {
-    $(".typed").typed({
-      strings: ["Software Developer", "Photographer", "Percussionist", "Software Developer"],
-      typeSpeed: 50
-    });
-  });
-
-  </script>
-  <script type="text/javascript">
-  $(function() {
-    var $menu = $('nav#menu'),
-      $html = $('html, body');
-
-    $menu.mmenu({
-      dragOpen: true,
-      "extensions": [
-        "theme-dark"
-      ]
-    });
-
-    var $anchor = false;
-    $menu.find('li > a').on(
-      'click',
-      function(e) {
-        $anchor = $(this);
-      }
-    );
-
-    var api = $menu.data('mmenu');
-    api.bind('closed',
-      function() {
-        if ($anchor) {
-          var href = $anchor.attr('href');
-          $anchor = false;
-
-          //  if the clicked link is linked to an anchor, scroll the page to that anchor 
-          if (href.slice(0, 1) == '#') {
-            $html.animate({
-              scrollTop: $(href).offset().top
-            });
-          }
-        }
-      }
-    );
-  });
-
-  </script>
 </head>
 
 <body>
@@ -192,6 +138,59 @@
   </nav>
   <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
   <script src="src/particles.js"></script>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-2.2.0.js"></script>
+  <script type="text/javascript" src="dist/js/jquery.mmenu.all.min.js"></script>
+  <script src="src/hammer.min.js" type="text/javascript"></script>
+  <script src="dist/addons/dragopen/jquery.mmenu.dragopen.min.js" type="text/javascript"></script>
+  <script src="src/typed.js" type="text/javascript"></script>
+  <script>
+  $(function() {
+    $(".typed").typed({
+      strings: ["Software Developer", "Photographer", "Percussionist", "Software Developer"],
+      typeSpeed: 50
+    });
+  });
+
+  </script>
+  <script type="text/javascript">
+  $(function() {
+    var $menu = $('nav#menu'),
+      $html = $('html, body');
+
+    $menu.mmenu({
+      dragOpen: true,
+      "extensions": [
+        "theme-dark"
+      ]
+    });
+
+    var $anchor = false;
+    $menu.find('li > a').on(
+      'click',
+      function(e) {
+        $anchor = $(this);
+      }
+    );
+
+    var api = $menu.data('mmenu');
+    api.bind('closed',
+      function() {
+        if ($anchor) {
+          var href = $anchor.attr('href');
+          $anchor = false;
+
+          //  if the clicked link is linked to an anchor, scroll the page to that anchor 
+          if (href.slice(0, 1) == '#') {
+            $html.animate({
+              scrollTop: $(href).offset().top
+            });
+          }
+        }
+      }
+    );
+  });
+
+  </script>
 </body>
 
 </html>
