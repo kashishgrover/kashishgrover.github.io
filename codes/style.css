@@ -294,11 +294,12 @@ footer {
   position: absolute;
   z-index: -2;
   text-align: center;
-  display: flex;/*
+  display: flex;
+  background: url('../img/KashishGrover (5).jpg') no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
-  background-size: cover;*/
+  background-size: cover;
 }
 
 footer div {
