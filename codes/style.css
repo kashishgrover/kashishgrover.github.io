@@ -8,11 +8,11 @@
 body {
   font-family: 'Work Sans', sans-serif;
   font-style: normal;
-/*  background: url('../img/KGP_5267.jpg') no-repeat center center fixed;
+  background: url('../img/KGP_5267.jpg') no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
-  background-size: cover;*/
+  background-size: cover;
   color: #ECF0F1;
   margin: 0;
   line-height: 1.5;
@@ -295,11 +295,11 @@ footer {
   z-index: -2;
   text-align: center;
   display: flex;
-  background: url('../img/KashishGrover (5).jpg') no-repeat center center fixed;
+/*  background: url('../img/KGP_5267.jpg') no-repeat fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
-  background-size: cover;
+  background-size: cover;*/
 }
 
 footer div {
