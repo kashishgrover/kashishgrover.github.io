@@ -1,13 +1,18 @@
 @font-face {
-    font-family: 'nevis'; /*a name to be used later*/
-    src: url('../src/nevis.ttf'); /*URL to font*/
+  font-family: 'nevis';
+  /*a name to be used later*/
+  src: url('../src/nevis.ttf');
+  /*URL to font*/
 }
 
 body {
   font-family: 'Work Sans', sans-serif;
-  font-style: normal; 
-  background-image: url('../img/KGP_5267.jpg');
-  background-repeat: no-repeat;
+  font-style: normal;
+  background: url('../img/KGP_5267.jpg') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
   color: #ECF0F1;
   margin: 0;
   line-height: 1.5;
@@ -89,8 +94,11 @@ header {
   width: 100%;
   padding: 0;
   z-index: -1;
-  background-image: url('../img/KGP_5267.jpg');
-  background-repeat: no-repeat;
+  background: url('../img/KGP_5267.jpg') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
 header nav {
@@ -287,8 +295,11 @@ footer {
   z-index: -2;
   text-align: center;
   display: flex;
-  background-image: url('../img/KGP_5267.jpg');
-  background-repeat: repeat;
+  background: url('../img/KGP_5267.jpg') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
 footer div {
@@ -531,25 +542,46 @@ nav:not(.mm-menu) {
   background-color: #FFF;
 }
 
-.typed-cursor{
+.typed-cursor {
+  opacity: 1;
+  -webkit-animation: blink 0.7s infinite;
+  -moz-animation: blink 0.7s infinite;
+  animation: blink 0.7s infinite;
+  font-size: 25px;
+}
+
+@keyframes blink {
+  0% {
     opacity: 1;
-    -webkit-animation: blink 0.7s infinite;
-    -moz-animation: blink 0.7s infinite;
-    animation: blink 0.7s infinite;
-    font-size: 25px;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
-@keyframes blink{
-    0% { opacity:1; }
-    50% { opacity:0; }
-    100% { opacity:1; }
+
+@-webkit-keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
-@-webkit-keyframes blink{
-    0% { opacity:1; }
-    50% { opacity:0; }
-    100% { opacity:1; }
-}
-@-moz-keyframes blink{
-    0% { opacity:1; }
-    50% { opacity:0; }
-    100% { opacity:1; }
+
+@-moz-keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
