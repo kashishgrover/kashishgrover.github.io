@@ -1,11 +1,13 @@
 @font-face {
-    font-family: 'nevis'; /*a name to be used later*/
-    src: url('../src/nevis.ttf'); /*URL to font*/
+  font-family: 'nevis';
+  /*a name to be used later*/
+  src: url('../src/nevis.ttf');
+  /*URL to font*/
 }
 
 body {
   font-family: 'Work Sans', sans-serif;
-  font-style: normal; 
+  font-style: normal;
   background-image: url('../img/KGP_5267.jpg');
   background-repeat: no-repeat;
   color: #ECF0F1;
@@ -88,7 +90,7 @@ header {
   left: 0;
   width: 100%;
   padding: 0;
-  z-index: 4;
+  z-index: 0;
 }
 
 header nav {
@@ -506,6 +508,7 @@ nav:not(.mm-menu) {
 
 .header.fixed {
   position: fixed;
+  z-index: 5;
   top: 0;
   left: 0;
 }
@@ -519,35 +522,58 @@ nav:not(.mm-menu) {
   position: absolute;
   top: 10px;
   left: 10px;
+  z-index: 5;
 }
 
 .header a:hover {
   opacity: 0.5;
+  z-index: 5;
 }
 
 .hamburger-inner {
   background-color: #FFF;
 }
 
-.typed-cursor{
+.typed-cursor {
+  opacity: 1;
+  -webkit-animation: blink 0.7s infinite;
+  -moz-animation: blink 0.7s infinite;
+  animation: blink 0.7s infinite;
+  font-size: 25px;
+}
+
+@keyframes blink {
+  0% {
     opacity: 1;
-    -webkit-animation: blink 0.7s infinite;
-    -moz-animation: blink 0.7s infinite;
-    animation: blink 0.7s infinite;
-    font-size: 25px;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
-@keyframes blink{
-    0% { opacity:1; }
-    50% { opacity:0; }
-    100% { opacity:1; }
+
+@-webkit-keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
-@-webkit-keyframes blink{
-    0% { opacity:1; }
-    50% { opacity:0; }
-    100% { opacity:1; }
-}
-@-moz-keyframes blink{
-    0% { opacity:1; }
-    50% { opacity:0; }
-    100% { opacity:1; }
+
+@-moz-keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
