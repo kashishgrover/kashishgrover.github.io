@@ -75,16 +75,16 @@ particlesJS("pt", {
         "mode": "grab"
       },
       "onclick": {
-        "enable": false,
+        "enable": true,
         "mode": "push"
       },
       "resize": true
     },
     "modes": {
       "grab": {
-        "distance": 200,
+        "distance": 150,
         "line_linked": {
-          "opacity": 1
+          "opacity": 0.75
         }
       },
       "bubble": {
@@ -99,7 +99,7 @@ particlesJS("pt", {
         "duration": 0.4
       },
       "push": {
-        "particles_nb": 4
+        "particles_nb": 3
       },
       "remove": {
         "particles_nb": 2
