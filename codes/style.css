@@ -1,8 +1,6 @@
 @font-face {
   font-family: 'nevis';
-  /*a name to be used later*/
   src: url('../src/nevis.ttf');
-  /*URL to font*/
 }
 
 body {
@@ -93,24 +91,6 @@ header {
   z-index: 0;
 }
 
-header nav {
-  text-align: center;
-  position: absolute;
-  right: 10%;
-  cursor: auto;
-}
-
-header nav a {
-  color: #ECF0F1;
-  text-decoration: none;
-  margin-left: 50px;
-  border-bottom: 2px solid rgba(223, 93, 75, 0);
-}
-
-header nav a:hover {
-  border-bottom: 1px solid #E74C3C;
-}
-
 .centerer {
   display: flex;
   height: 100%;
@@ -177,7 +157,7 @@ section {
 /* custom sections */
 
 .tnm {
-  background-color: #E74C3C;
+  background-color: #B71C1C;
 }
 
 .tnm .link {
@@ -189,29 +169,29 @@ section {
   background-color: rgba(255, 255, 255, 0.1);
 }
 
-.scorehorse {
+.machinevision {
   background-color: #e2e2e2;
   color: #333;
 }
 
-.scorehorse p a {
+.machinevision p a {
   color: #333;
 }
 
-.scorehorse .link {
+.machinevision .link {
   color: #ff3a3a;
 }
 
-.scorehorse .link {
+.machinevision .link {
   border-color: #ff3a3a;
 }
 
-.scorehorse .link:hover {
+.machinevision .link:hover {
   background-color: #ECF0F1;
 }
 
 .embedded {
-  background-color: #155020;
+  background-color: #004c0e;
 }
 
 .embedded .link {
@@ -393,13 +373,6 @@ footer div a {
   padding-left: 0;
   padding-right: 0;
 }
-
-
-/*
-.one{ background-color: hsl(224, 47%, 56%)}
-.two{ background-color: hsl(124, 13%, 15%)}
-.three{ background-color: hsl(224, 13%, 13%)}
-*/
 
 .strengths {
   background-color: #313644;
