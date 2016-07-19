@@ -272,72 +272,6 @@ footer div a {
   text-decoration: none;
 }
 
-#messenger {
-  background-color: #f1f1f1;
-  max-width: 1000px;
-  margin-right: auto;
-  margin-left: auto;
-  color: #2C3E50;
-  overflow: hidden;
-  border-radius: 3px;
-}
-
-#messenger h2 {
-  font-weight: bold;
-}
-
-#messenger h3 {
-  background-color: #D6D6D6;
-  float: left;
-  max-width: 600px;
-  font-weight: 400;
-  padding: 10px;
-  padding-left: 20px;
-  padding-right: 20px;
-  border-radius: 26px;
-  position: relative;
-}
-
-#messenger h3:before {
-  border-color: #D6D6D6;
-  border-radius: 50% 50% 50% 50%;
-  border-style: solid;
-  border-width: 0 20px;
-  bottom: 0;
-  clip: rect(21px, 75px, 46px, 32px);
-  content: " ";
-  height: 46px;
-  position: absolute;
-  left: -50px;
-  width: 30px;
-}
-
-#messenger p {
-  float: right;
-  max-width: 600px;
-  padding: 10px;
-  padding-left: 20px;
-  padding-right: 20px;
-  border-radius: 26px;
-  background-color: #3185F5;
-  color: #ECF0F1;
-  position: relative;
-}
-
-#messenger p:before {
-  border-color: #3185F5;
-  border-radius: 50% 50% 50% 50%;
-  border-style: solid;
-  border-width: 0 20px;
-  bottom: 0;
-  clip: rect(21px, 35px, 46px, 0px);
-  content: " ";
-  height: 46px;
-  position: absolute;
-  right: -50px;
-  width: 30px;
-}
-
 #cover-leter p {
   max-width: 800px;
   margin-left: auto;
@@ -362,29 +296,11 @@ footer div a {
 
 .full-width {
   width: 100%;
-  padding-left: 0;
-  padding-right: 0;
+  padding: 25px;
 }
 
-.strengths {
-  background-color: #313644;
-  padding-bottom: 15px;
-}
-
-.about-me {
-  background-color: #FF7E48;
-  overflow: hidden;
-}
-
-.about-me img {
-  float: left;
-  width: 200px;
-  margin-top: 87px;
-}
-
-.about-me .wrapper-right {
-  float: right;
-  width: calc(100% - 300px);
+.shippable {
+  background-color: #303030;
 }
 
 hr {
