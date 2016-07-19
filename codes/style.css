@@ -157,7 +157,7 @@ section {
 /* custom sections */
 
 .tnm {
-  background-color: #3B3B3B;
+  background-color: #2b2b2b;
 }
 
 .tnm .link {
@@ -170,7 +170,7 @@ section {
 }
 
 .machinevision {
-  background-color: #404040;
+  background-color: #303030;
 }
 
 .machinevision .link {
@@ -183,7 +183,7 @@ section {
 }
 
 .embedded {
-  background-color: #454545;
+  background-color: #353535;
 }
 
 .embedded .link {
@@ -196,7 +196,7 @@ section {
 }
 
 .ccompiler {
-  background-color: #4a4a4a;
+  background-color: #3a3a3a;
 }
 
 .ccompiler .link {
@@ -209,7 +209,7 @@ section {
 }
 
 .cafe {
-  background-color: #4f4f4f;
+  background-color: #3f3f3f;
 }
 
 .cafe .link {
@@ -222,7 +222,7 @@ section {
 }
 
 .uvds {
-  background-color: #545454;
+  background-color: #444444;
 }
 
 .uvds .link {
