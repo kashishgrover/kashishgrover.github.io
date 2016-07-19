@@ -109,7 +109,7 @@ section {
   padding: 25px;
   padding-left: 100px;
   padding-right: 100px;
-  background-color: #111;
+  background-color: #212121;
 }
 
 .ta-c {
@@ -157,7 +157,7 @@ section {
 /* custom sections */
 
 .tnm {
-  background-color: #2e2e2e;
+  background-color: #3B3B3B;
 }
 
 .tnm .link {
@@ -170,7 +170,7 @@ section {
 }
 
 .machinevision {
-  background-color: #4e4e4e;
+  background-color: #404040;
 }
 
 .machinevision .link {
@@ -183,7 +183,7 @@ section {
 }
 
 .embedded {
-  background-color: #4e4e4e;
+  background-color: #454545;
 }
 
 .embedded .link {
@@ -196,12 +196,12 @@ section {
 }
 
 .ccompiler {
-  background-color: #2e2e2e;
+  background-color: #4a4a4a;
 }
 
 .ccompiler .link {
   color: #ECF0F1;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.1);
 }
 
 .ccompiler .link:hover {
@@ -209,12 +209,12 @@ section {
 }
 
 .cafe {
-  background-color: #2e2e2e;
+  background-color: #4f4f4f;
 }
 
 .cafe .link {
   color: #ECF0F1;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.1);
 }
 
 .cafe .link:hover {
@@ -222,7 +222,7 @@ section {
 }
 
 .uvds {
-  background-color: #4e4e4e;
+  background-color: #545454;
 }
 
 .uvds .link {
