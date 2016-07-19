@@ -129,6 +129,10 @@ section {
   font-weight: 500;
 }
 
+.title h3 {
+  font-weight: 500;
+}
+
 .blurb {
   display: block;
 }
@@ -303,7 +307,15 @@ footer div a {
 }
 
 .shippable {
+  background-color: #2b2b2b;
+}
+
+.mttn {
   background-color: #303030;
+}
+
+.concentrix {
+  background-color: #353535;
 }
 
 hr {
