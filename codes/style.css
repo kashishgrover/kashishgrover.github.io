@@ -296,7 +296,10 @@ footer div a {
 
 .full-width {
   width: 100%;
-  padding: 25px;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-top: 25px;
+  padding-bottom: 25px;
 }
 
 .shippable {
