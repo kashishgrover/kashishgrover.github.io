@@ -106,10 +106,10 @@ header {
 /* sections */
 
 section {
-  padding: 50px;
+  padding: 25px;
   padding-left: 100px;
   padding-right: 100px;
-  background-color: #2C3E50;
+  background-color: #111;
 }
 
 .ta-c {
@@ -157,7 +157,7 @@ section {
 /* custom sections */
 
 .tnm {
-  background-color: #B71C1C;
+  background-color: #2e2e2e;
 }
 
 .tnm .link {
@@ -170,33 +170,25 @@ section {
 }
 
 .machinevision {
-  background-color: #e2e2e2;
-  color: #333;
-}
-
-.machinevision p a {
-  color: #333;
+  background-color: #4e4e4e;
 }
 
 .machinevision .link {
-  color: #ff3a3a;
-}
-
-.machinevision .link {
-  border-color: #ff3a3a;
+  color: #ECF0F1;
+  background-color: rgba(0, 0, 0, 0.1);
 }
 
 .machinevision .link:hover {
-  background-color: #ECF0F1;
+  background-color: rgba(255, 255, 255, 0.1);
 }
 
 .embedded {
-  background-color: #004c0e;
+  background-color: #4e4e4e;
 }
 
 .embedded .link {
   color: #ECF0F1;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.1);
 }
 
 .embedded .link:hover {
@@ -204,7 +196,7 @@ section {
 }
 
 .ccompiler {
-  background-color: #1E1E1F;
+  background-color: #2e2e2e;
 }
 
 .ccompiler .link {
@@ -217,7 +209,7 @@ section {
 }
 
 .cafe {
-  background-color: #4E342E;
+  background-color: #2e2e2e;
 }
 
 .cafe .link {
@@ -230,12 +222,12 @@ section {
 }
 
 .uvds {
-  background-color: #2980B9;
+  background-color: #4e4e4e;
 }
 
 .uvds .link {
   color: #ECF0F1;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.1);
 }
 
 .uvds .link:hover {
