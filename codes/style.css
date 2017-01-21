@@ -53,6 +53,12 @@ h2 a:hover {
     color: #03a9f4;
 }
 
+ul li {
+    font-size: 19px;
+    font-weight: 300;
+    list-style-position: outside;
+}
+
 p {
     font-size: 19px;
     font-weight: 300;
