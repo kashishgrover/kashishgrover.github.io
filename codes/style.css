@@ -163,6 +163,7 @@ section {
 .flexin {
     display: flex;
     flex-wrap: wrap;
+    width: 100%;
 }
 
 
@@ -261,8 +262,6 @@ footer {
     z-index: -2;
     text-align: center;
     display: flex;
-    /*background-image: url('../img/KGP_5267opt.jpg');
-    background-repeat: repeat;*/
 }
 
 footer div {
