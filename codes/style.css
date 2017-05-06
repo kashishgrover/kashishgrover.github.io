@@ -7,6 +7,8 @@ body {
     font-family: 'Work Sans', sans-serif;
     font-style: normal;
     background-image: url('../img/KGP_5267opt.jpg');
+    background-attachment: fixed;
+    background-size: cover;
     background-repeat: no-repeat;
     color: #ECF0F1;
     margin: 0;
@@ -259,8 +261,8 @@ footer {
     z-index: -2;
     text-align: center;
     display: flex;
-    background-image: url('../img/KGP_5267opt.jpg');
-    background-repeat: repeat;
+    /*background-image: url('../img/KGP_5267opt.jpg');
+    background-repeat: repeat;*/
 }
 
 footer div {
