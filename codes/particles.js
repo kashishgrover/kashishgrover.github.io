@@ -1,10 +1,10 @@
 particlesJS("pt", {
   "particles": {
     "number": {
-      "value": 60,
+      "value": 200,
       "density": {
         "enable": true,
-        "value_area": 1000
+        "value_area": 800
       }
     },
     "color": {
@@ -17,7 +17,7 @@ particlesJS("pt", {
         "color": "#000000"
       },
       "polygon": {
-        "nb_sides": 3
+        "nb_sides": 5
       },
       "image": {
         "src": "img/github.svg",
@@ -26,27 +26,27 @@ particlesJS("pt", {
       }
     },
     "opacity": {
-      "value": 0.5,
-      "random": false,
+      "value": 1,
+      "random": true,
       "anim": {
-        "enable": false,
+        "enable": true,
         "speed": 1,
-        "opacity_min": 0.1,
+        "opacity_min": 0,
         "sync": false
       }
     },
     "size": {
-      "value": 3,
+      "value": 4,
       "random": true,
       "anim": {
         "enable": false,
-        "speed": 40,
-        "size_min": 0.1,
+        "speed": 4,
+        "size_min": 0.3,
         "sync": false
       }
     },
     "line_linked": {
-      "enable": true,
+      "enable": false,
       "distance": 150,
       "color": "#ffffff",
       "opacity": 0.4,
@@ -54,7 +54,7 @@ particlesJS("pt", {
     },
     "move": {
       "enable": true,
-      "speed": 2,
+      "speed": 1,
       "direction": "none",
       "random": true,
       "straight": false,
@@ -63,43 +63,43 @@ particlesJS("pt", {
       "attract": {
         "enable": false,
         "rotateX": 600,
-        "rotateY": 1200
+        "rotateY": 600
       }
     }
   },
   "interactivity": {
-    "detect_on": "window",
+    "detect_on": "canvas",
     "events": {
       "onhover": {
         "enable": true,
-        "mode": "grab"
+        "mode": "bubble"
       },
       "onclick": {
         "enable": true,
-        "mode": "push"
+        "mode": "repulse"
       },
       "resize": true
     },
     "modes": {
       "grab": {
-        "distance": 150,
+        "distance": 400,
         "line_linked": {
-          "opacity": 0.75
+          "opacity": 1
         }
       },
       "bubble": {
-        "distance": 400,
-        "size": 20,
+        "distance": 250,
+        "size": 0,
         "duration": 2,
-        "opacity": 8,
+        "opacity": 0,
         "speed": 3
       },
       "repulse": {
-        "distance": 200,
+        "distance": 400,
         "duration": 0.4
       },
       "push": {
-        "particles_nb": 3
+        "particles_nb": 4
       },
       "remove": {
         "particles_nb": 2
@@ -108,4 +108,3 @@ particlesJS("pt", {
   },
   "retina_detect": true
 });
-
