@@ -297,16 +297,20 @@ footer div a {
     padding-bottom: 25px;
 }
 
-.shippable {
+.hashnode {
     background-color: #262626;
 }
 
 .hpe {
-    background-color: #2b2b2b;
+    background-color: #2a2a2a;
+}
+
+.shippable {
+    background-color: #2d2d2d;
 }
 
 .mttn {
-    background-color: #303030;
+    background-color: #313131;
 }
 
 .concentrix {
