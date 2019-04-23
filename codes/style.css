@@ -292,28 +292,32 @@ footer div a {
   padding-bottom: 25px;
 }
 
-.treebo {
+.thoughtspot {
   background-color: #262626;
 }
 
-.hashnode {
+.treebo {
   background-color: #2a2a2a;
 }
 
-.hpe {
+.hashnode {
   background-color: #2d2d2d;
 }
 
-.shippable {
+.hpe {
   background-color: #313131;
 }
 
-.mttn {
+.shippable {
   background-color: #353535;
 }
 
-.concentrix {
+.mttn {
   background-color: #393939;
+}
+
+.concentrix {
+  background-color: #3D3D3D;
 }
 
 .blog {
