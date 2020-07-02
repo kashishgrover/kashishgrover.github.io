@@ -6,7 +6,7 @@
 body {
   font-family: "Work Sans", sans-serif;
   font-style: normal;
-  background-image: url("../img/KGP_5267opt.jpg");
+  background-image: url("../img/background.jpg");
   background-attachment: fixed;
   background-size: cover;
   background-repeat: no-repeat;
@@ -317,7 +317,7 @@ footer div a {
 }
 
 .concentrix {
-  background-color: #3D3D3D;
+  background-color: #3d3d3d;
 }
 
 .blog {
