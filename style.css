@@ -87,6 +87,7 @@ a {
 
 header {
   height: 100vh;
+  height: 100svh;
   padding: 100px;
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
