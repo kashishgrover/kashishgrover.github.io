@@ -173,6 +173,8 @@ footer {
 
 footer div {
   margin: auto;
+  padding: 0 25px;
+  overflow-wrap: anywhere;
 }
 
 footer div a {
@@ -246,5 +248,12 @@ footer div a {
   }
   header nav {
     right: 25px;
+  }
+  .full-width {
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+  footer h2 {
+    font-size: 20px;
   }
 }
