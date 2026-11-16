@@ -1,12 +1,12 @@
 @font-face {
   font-family: "nevis";
-  src: url("../fonts/nevis.ttf");
+  src: url("./fonts/nevis.ttf");
 }
 
 body {
   font-family: "Work Sans", sans-serif;
   font-style: normal;
-  background-image: url("../img/background.jpg");
+  background-image: url("./img/background.jpg");
   background-attachment: fixed;
   background-size: cover;
   background-repeat: no-repeat;
@@ -119,18 +119,6 @@ section {
   text-align: center;
 }
 
-.title {
-  display: block;
-}
-
-.title h2 {
-  font-weight: 500;
-}
-
-.title h3 {
-  font-weight: 500;
-}
-
 .blurb {
   display: block;
 }
@@ -150,14 +138,73 @@ section {
   background-color: rgba(255, 255, 255, 0.2);
 }
 
-.flexin {
-  display: flex;
-  flex-direction: column;
-}
-
 .wrapper {
   margin-bottom: 400px;
   box-shadow: 0px 5px 0px 0px rgba(0, 0, 0, 0.1);
+}
+
+/* Projects */
+
+.projects {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1px;
+  background-color: #1e1e1e;
+}
+
+.project {
+  background-color: #262626;
+  padding: 25px 50px;
+}
+
+.project h2 {
+  overflow-wrap: anywhere;
+}
+
+.project img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+}
+
+.links a {
+  color: #ecf0f1;
+  text-decoration: none;
+  border-bottom: 1px solid #03a9f4;
+  margin-right: 15px;
+}
+
+.links a:hover {
+  color: #03a9f4;
+}
+
+/* Work experience */
+
+.jobs {
+  background-color: #222222;
+}
+
+.job {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1.3fr) auto;
+  gap: 0 25px;
+  align-items: baseline;
+  padding: 20px 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.job:first-child {
+  border-top: 0;
+}
+
+.job h2,
+.job p {
+  margin: 0;
+}
+
+.job .note {
+  text-align: right;
 }
 
 /*Contact*/
@@ -190,38 +237,6 @@ footer div a {
   padding-bottom: 25px;
 }
 
-.goldcast {
-  background-color: #222222;
-}
-
-.thoughtspot {
-  background-color: #262626;
-}
-
-.treebo {
-  background-color: #2a2a2a;
-}
-
-.hashnode {
-  background-color: #2d2d2d;
-}
-
-.hpe {
-  background-color: #313131;
-}
-
-.shippable {
-  background-color: #353535;
-}
-
-.mttn {
-  background-color: #393939;
-}
-
-.concentrix {
-  background-color: #3d3d3d;
-}
-
 .blog {
   font-family: "Work Sans", sans-serif;
   background-color: #2b2b2b;
@@ -249,11 +264,23 @@ footer div a {
   header nav {
     right: 25px;
   }
-  .full-width {
+  .full-width,
+  .project {
     padding-left: 25px;
     padding-right: 25px;
   }
   footer h2 {
     font-size: 20px;
+  }
+  .projects {
+    grid-template-columns: minmax(0, 1fr);
+  }
+  .job {
+    grid-template-columns: minmax(0, 1fr) auto;
+    gap: 5px 15px;
+  }
+  .job .role {
+    grid-column: 1 / -1;
+    grid-row: 2;
   }
 }
