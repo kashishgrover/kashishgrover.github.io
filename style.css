@@ -6,13 +6,22 @@
 body {
   font-family: "Work Sans", sans-serif;
   font-style: normal;
-  background-image: url("./img/background.jpg");
-  background-attachment: fixed;
-  background-size: cover;
-  background-repeat: no-repeat;
+  background-color: #1e1e1e;
   color: #ecf0f1;
   margin: 0;
   line-height: 1.5;
+}
+
+/* Fixed layer instead of background-attachment: fixed, which iOS Safari ignores */
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100lvh;
+  z-index: -3;
+  background: url("./img/background.jpg") center / cover no-repeat;
 }
 
 * {
@@ -54,12 +63,6 @@ h2 a:hover {
   color: #03a9f4;
 }
 
-ul li {
-  font-size: 19px;
-  font-weight: 300;
-  list-style-position: outside;
-}
-
 p {
   font-size: 19px;
   font-weight: 300;
@@ -88,15 +91,6 @@ header {
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 
-#pt {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  padding: 0;
-  z-index: 0;
-}
-
 .centerer {
   display: flex;
   height: 100%;
@@ -117,25 +111,6 @@ section {
 
 .ta-c {
   text-align: center;
-}
-
-.blurb {
-  display: block;
-}
-
-.link {
-  font-size: 19px;
-  text-decoration: none;
-  border: 1px solid #ecf0f1;
-  padding: 10px;
-  border-radius: 3px;
-  margin-top: 20px;
-  display: inline-block;
-  color: #ecf0f1;
-}
-
-.link:hover {
-  background-color: rgba(255, 255, 255, 0.2);
 }
 
 .wrapper {
@@ -237,32 +212,9 @@ footer div a {
   padding-bottom: 25px;
 }
 
-.blog {
-  font-family: "Work Sans", sans-serif;
-  background-color: #2b2b2b;
-  font-size: 25px;
-  font-weight: 300;
-  padding-bottom: 15px;
-  padding-top: 15px;
-}
-
-.blog a {
-  color: white;
-  text-decoration: none;
-  border-bottom: 1px solid #fff;
-}
-
-.blog a:hover {
-  color: #03a9f4;
-  border-bottom: 1px solid #03a9f4;
-}
-
 @media all and (max-width: 800px) {
   header {
     padding: 25px;
-  }
-  header nav {
-    right: 25px;
   }
   .full-width,
   .project {
