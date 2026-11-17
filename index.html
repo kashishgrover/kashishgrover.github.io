@@ -19,13 +19,266 @@
   <meta property="og:url" content="https://kashishgrover.com/" />
   <meta property="og:description" content="Software engineer — frontend, platform, developer experience. I build things that make teams faster. Tinkerer at heart." />
   <meta property="og:site_name" content="kashishgrover.com" />
-  <link rel="stylesheet" type="text/css" href="./style.css?v=4" />
-  <!-- FAVICON -->
-  <link rel="shortcut icon" href="./img/favicon.png" type="image/x-icon" />
-  <link rel="icon" href="./img/favicon.png" type="image/x-icon" />
-  <!-- FONTS -->
-  <link href="https://fonts.googleapis.com/css?family=Work+Sans:400,500,300" rel="stylesheet" type="text/css" />
-  <link href="https://fonts.googleapis.com/css?family=Space+Mono" rel="stylesheet" />
+  <link rel="preload" href="./fonts/nevis.ttf" as="font" type="font/ttf" crossorigin />
+  <link rel="preload" href="./img/background.webp" as="image" type="image/webp" fetchpriority="high" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono&family=Work+Sans:wght@300;400;500&display=swap" rel="stylesheet" media="print" onload="this.media='all'" />
+  <link rel="icon" href="./img/favicon.png" type="image/png" />
+  <style>
+    @font-face {
+      font-family: "nevis";
+      src: url("./fonts/nevis.ttf") format("truetype");
+      font-display: swap;
+    }
+
+    body {
+      font-family: "Work Sans", sans-serif;
+      font-style: normal;
+      background-color: #1e1e1e;
+      color: #ecf0f1;
+      margin: 0;
+      line-height: 1.5;
+    }
+
+    /* Fixed layer instead of background-attachment: fixed, which iOS Safari ignores */
+    body::before {
+      content: "";
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100lvh;
+      z-index: -3;
+      background: url("./img/background.webp") left top / cover no-repeat;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    /* Basic Typography */
+
+    h1 {
+      font-family: "nevis", sans-serif;
+      font-size: 55px;
+      color: #e2e2e2;
+      font-weight: 500;
+    }
+
+    .typed {
+      display: block;
+      min-height: 1.5em;
+      font-family: "Space Mono", sans-serif;
+      font-size: 25px;
+      font-weight: 400;
+    }
+
+    h2 {
+      font-family: "nevis", sans-serif;
+      font-size: 25px;
+      font-weight: 400;
+    }
+
+    section h2 {
+      font-weight: 500;
+    }
+
+    h2 a {
+      color: #ecf0f1;
+      text-decoration: none;
+      border-bottom: 1px solid #03a9f4;
+    }
+
+    h2 a:hover {
+      color: #03a9f4;
+    }
+
+    p {
+      font-size: 19px;
+      font-weight: 300;
+    }
+
+    p a {
+      color: #ecf0f1;
+    }
+
+    a {
+      transition: ease all 0.2s;
+    }
+
+    .note {
+      font-size: 14px;
+      font-weight: normal;
+      opacity: 0.75;
+      font-style: italic;
+    }
+
+    .cursor {
+      animation: blink 0.7s infinite;
+    }
+
+    @keyframes blink {
+      50% {
+        opacity: 0;
+      }
+    }
+
+    /* Head */
+
+    header {
+      height: 100vh;
+      height: 100svh;
+      padding: 100px;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    .centerer {
+      display: flex;
+      height: 100%;
+    }
+
+    .hero {
+      max-width: 420px;
+      margin-top: auto;
+      margin-bottom: auto;
+    }
+
+    /* sections */
+
+    section {
+      padding: 25px;
+      background-color: #1E1E1E;
+    }
+
+    .ta-c {
+      text-align: center;
+    }
+
+    .wrapper {
+      margin-bottom: 400px;
+      box-shadow: 0px 5px 0px 0px rgba(0, 0, 0, 0.1);
+    }
+
+    /* Projects */
+
+    .projects {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 1px;
+      background-color: #1e1e1e;
+    }
+
+    .project {
+      background-color: #262626;
+      padding: 25px 50px;
+    }
+
+    .project h2 {
+      overflow-wrap: anywhere;
+    }
+
+    .project img {
+      display: block;
+      width: 100%;
+      aspect-ratio: 16 / 9;
+      object-fit: cover;
+    }
+
+    .links a {
+      color: #ecf0f1;
+      text-decoration: none;
+      border-bottom: 1px solid #03a9f4;
+      margin-right: 15px;
+    }
+
+    .links a:hover {
+      color: #03a9f4;
+    }
+
+    /* Work experience */
+
+    .jobs {
+      background-color: #222222;
+    }
+
+    .job {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) minmax(0, 1.3fr) auto;
+      gap: 0 25px;
+      align-items: baseline;
+      padding: 20px 0;
+      border-top: 1px solid rgba(255, 255, 255, 0.08);
+    }
+
+    .job:first-child {
+      border-top: 0;
+    }
+
+    .job h2,
+    .job p {
+      margin: 0;
+    }
+
+    .job .note {
+      text-align: right;
+    }
+
+    /*Contact*/
+
+    footer {
+      height: 400px;
+      width: 100%;
+      position: absolute;
+      z-index: -2;
+      text-align: center;
+      display: flex;
+    }
+
+    footer div {
+      margin: auto;
+      padding: 0 25px;
+      overflow-wrap: anywhere;
+    }
+
+    footer div a {
+      color: #ecf0f1;
+      text-decoration: none;
+    }
+
+    .full-width {
+      width: 100%;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 25px;
+      padding-bottom: 25px;
+    }
+
+    @media all and (max-width: 800px) {
+      header {
+        padding: 25px;
+      }
+      .full-width,
+      .project {
+        padding-left: 25px;
+        padding-right: 25px;
+      }
+      footer h2 {
+        font-size: 20px;
+      }
+      .projects {
+        grid-template-columns: minmax(0, 1fr);
+      }
+      .job {
+        grid-template-columns: minmax(0, 1fr) auto;
+        gap: 5px 15px;
+      }
+      .job .role {
+        grid-column: 1 / -1;
+        grid-row: 2;
+      }
+    }
+  </style>
 </head>
 
 <body>
@@ -34,7 +287,7 @@
       <div class="centerer">
         <div class="hero">
           <h1>Kashish Grover</h1>
-          <span class="typed"></span>
+          <span class="typed"><span class="text"></span><span class="cursor" aria-hidden="true">|</span></span>
         </div>
       </div>
     </header>
@@ -124,13 +377,31 @@
       </div>
     </footer>
   </div>
-  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12" type="text/javascript"></script>
   <script>
-    var typed = new Typed('.typed', {
-      strings: ["Software Engineer", "Tinkerer"],
-      typeSpeed: 50,
-      backSpeed: 50,
-    });
+    (function () {
+      var el = document.querySelector('.typed .text');
+      var words = ['Software Engineer', 'Tinkerer'];
+      if (matchMedia('(prefers-reduced-motion: reduce)').matches) {
+        el.textContent = words[words.length - 1];
+        return;
+      }
+      var w = 0, i = 0, deleting = false;
+      (function tick() {
+        var word = words[w];
+        i += deleting ? -1 : 1;
+        el.textContent = word.slice(0, i);
+        if (!deleting && i === word.length) {
+          if (w === words.length - 1) return;
+          deleting = true;
+          return setTimeout(tick, 1000);
+        }
+        if (deleting && i === 0) {
+          deleting = false;
+          w++;
+        }
+        setTimeout(tick, 50);
+      })();
+    })();
   </script>
 </body>
 
