@@ -68,8 +68,10 @@
 
     .typed {
       display: block;
-      min-height: 1.5em;
-      font-family: "Space Mono", sans-serif;
+      position: relative;
+      height: 1.5em;
+      white-space: nowrap;
+      font-family: "Space Mono", monospace;
       font-size: 25px;
       font-weight: 400;
     }
@@ -114,13 +116,85 @@
       font-style: italic;
     }
 
+    /*
+      Typing effect in pure CSS. Space Mono is monospace, so one step = one
+      character. clip-path and transform repaint without re-running layout.
+      Timeline: type word 1 (0.85s), hold 1s, delete (0.85s), type word 2 (0.4s).
+    */
+    .typed span {
+      position: absolute;
+      left: 0;
+    }
+
+    .w1 {
+      animation: w1 2.7s both;
+    }
+
+    .w2 {
+      animation: w2 0.4s steps(8) 2.7s both;
+    }
+
     .cursor {
-      animation: blink 0.7s infinite;
+      animation: cursor 3.1s both, blink 0.7s infinite;
+    }
+
+    @keyframes w1 {
+      0% {
+        clip-path: inset(0 100% 0 0);
+        animation-timing-function: steps(17);
+      }
+      31%, 69% {
+        clip-path: inset(0 0 0 0);
+        animation-timing-function: steps(17);
+      }
+      100% {
+        clip-path: inset(0 100% 0 0);
+      }
+    }
+
+    @keyframes w2 {
+      from {
+        clip-path: inset(0 100% 0 0);
+      }
+      to {
+        clip-path: inset(0 0 0 0);
+      }
+    }
+
+    @keyframes cursor {
+      0% {
+        transform: translateX(0);
+        animation-timing-function: steps(17);
+      }
+      27%, 60% {
+        transform: translateX(17ch);
+        animation-timing-function: steps(17);
+      }
+      87% {
+        transform: translateX(0);
+        animation-timing-function: steps(8);
+      }
+      100% {
+        transform: translateX(8ch);
+      }
     }
 
     @keyframes blink {
       50% {
         opacity: 0;
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      .w1 {
+        display: none;
+      }
+      .w2,
+      .cursor {
+        animation: none;
+      }
+      .cursor {
+        transform: translateX(8ch);
       }
     }
 
@@ -287,7 +361,7 @@
       <div class="centerer">
         <div class="hero">
           <h1>Kashish Grover</h1>
-          <span class="typed"><span class="text"></span><span class="cursor" aria-hidden="true">|</span></span>
+          <span class="typed"><span class="w1" aria-hidden="true">Software Engineer</span><span class="w2">Tinkerer</span><span class="cursor" aria-hidden="true">|</span></span>
         </div>
       </div>
     </header>
@@ -379,32 +453,6 @@
       </div>
     </footer>
   </div>
-  <script>
-    (function () {
-      var el = document.querySelector('.typed .text');
-      var words = ['Software Engineer', 'Tinkerer'];
-      if (matchMedia('(prefers-reduced-motion: reduce)').matches) {
-        el.textContent = words[words.length - 1];
-        return;
-      }
-      var w = 0, i = 0, deleting = false;
-      (function tick() {
-        var word = words[w];
-        i += deleting ? -1 : 1;
-        el.textContent = word.slice(0, i);
-        if (!deleting && i === word.length) {
-          if (w === words.length - 1) return;
-          deleting = true;
-          return setTimeout(tick, 1000);
-        }
-        if (deleting && i === 0) {
-          deleting = false;
-          w++;
-        }
-        setTimeout(tick, 50);
-      })();
-    })();
-  </script>
 </body>
 
 </html>
