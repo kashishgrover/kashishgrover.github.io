@@ -120,9 +120,10 @@
       Typing effect in pure CSS. Space Mono is monospace, so one step = one
       character. clip-path and transform repaint without re-running layout.
       Timeline: type word 1 (0.85s), hold 1s, delete (0.85s), type word 2 (0.4s).
-      .w2 fills backwards only, so once typed it falls back to its unclipped
-      base style. With "both", Safari holds the last step (7 of 8) and cuts
-      off the final "r".
+      Safari can stop one step short of the end of a steps() animation, which
+      cut off the final "r". So .w2 runs one extra step past the full word
+      (step 8 of 9 already shows all 8 letters) and fills backwards only, so
+      once typed it falls back to its unclipped base style.
     */
     .typed span {
       position: absolute;
@@ -134,7 +135,7 @@
     }
 
     .w2 {
-      animation: w2 0.4s steps(8) 2.7s backwards;
+      animation: w2 0.45s steps(9) 2.7s backwards;
     }
 
     .cursor {
@@ -160,7 +161,7 @@
         clip-path: inset(0 100% 0 0);
       }
       to {
-        clip-path: inset(0 0 0 0);
+        clip-path: inset(0 -12.5% 0 0);
       }
     }
 
